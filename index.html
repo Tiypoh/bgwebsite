@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="image/png" href="pics/bellas mini logo.png" rel="icon">
+	<link rel="stylesheet" href="website.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<meta name=keywords content="Tucson Gelato">
+	<meta name=author content="DESAD Tech Group">
+	<title>Bella's Gelato Shoppe</title>
+	<script>
+		function initMap() {
+			var BG = new google.maps.LatLng(32.2358,-110.9326);
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 15,
+				center: BG,
+				disableDefaultUI: true,
+				styles: [
+					{
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#212121"
+							}
+						]
+					},
+					{
+						"elementType": "labels.icon",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"color": "#212121"
+							}
+						]
+					},
+					{
+						"featureType": "administrative",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.country",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#9e9e9e"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.land_parcel",
+						"elementType": "labels",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#bdbdbd"
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"featureType": "poi.business",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#181818"
+							}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#616161"
+						}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"color": "#1b1b1b"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "geometry.fill",
+						"stylers": [
+							{
+								"color": "#2c2c2c"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#8a8a8a"
+							}
+						]
+					},
+					{
+						"featureType": "road.arterial",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#373737"
+							}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#3c3c3c"
+							}
+						]
+					},
+					{
+						"featureType": "road.highway.controlled_access",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#4e4e4e"
+							}
+						]
+					},
+					{
+						"featureType": "road.local",
+						"elementType": "labels",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "road.local",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#616161"
+							}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#000000"
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#3d3d3d"
+							}
+						]
+					}
+				]
+			});
+			const marker = new google.maps.Marker({
+				position: BG,
+				map: map,
+				title: "Bellas Gelato 2648 E. Speedway",
+			});
+		}
+		window.initMap = initMap;
+	</script>
+</head>
+<body>
+	<header class="sticky">
+		<img src="pics/bellas logo.png" height=100px alt="Bella's Logo" style="margin-bottom:-20px;">
+		<div>
+			<h1>Bella's Gelato Shoppe</h1>
+			<div style="margin:10px;">
+				<a href="index.html">Home</a>
+				<a href="menu.html">Menu</a>
+				<a href="bella.html">Bella and Friends</a>
+				<a href="foodtruck.html">Food Truck</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+		</div>
+	</header>
+	<div class="parent">
+		<div class="child">
+			<div class="center">
+				<img src="pics/patio.jpg" style="width:100vw;">
+			</div>
+		</div>
+	</div>
+	<main class="scrollless">
+		<section class="banner parallax">
+			<div>
+				<div class="textbox-top">
+					<span>YOUR LOCAL GELATERIA</span>
+				</div>
+				<div class="textbox-bottom">
+					<div class="text">
+						<span style="padding-top:30px">Bella's Gelateria is owned & operated by a family of Tucson Natives,<br>proudly serving Tucson authentic gelato!</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="parallax bg1" style="height:3500px">
+			<div id="about">
+				<hr>
+				<h2>About</h2>
+				<h3>Bella's serves amazing gelato, house made waffle cones, affogatos,<br>sorbettinos, espresso, organic cold brew iced coffee, smoothies,<br>root beer floats, lemonade and fresh fudge made in house!<br><br>If you are looking for the authentic taste of gelato<br>and a healthier treat stop by and compare!</h3>
+			</div>
+			<div id="find us">
+				<hr>
+				<h2>Find Us</h2>
+				<h3>SHOP HOURS<br><br>Tuesday 1-9pm<br>Wednesday 1-9pm<br>Thursday 1-9pm<br>Friday 1-10pm<br>Saturday 1-10pm<br>Sunday 1-9pm<br>Monday Closed<br><br><br>Address: 2648 E. Speedway Bvld.<br></h3>
+				<div id="map">
+				</div>
+				<script async
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKgqqzYtXftqFfT_g4XereEWnhYg8Dup8&callback=initMap">
+				</script>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

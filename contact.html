@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="image/png" href="pics/bellas mini logo.png" rel="icon">
+	<link rel="stylesheet" href="website.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<meta name=keywords content="Tucson Gelato">
+	<meta name=author content="DESAD Tech Group">
+	<title>Bella's Gelato Shoppe</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script>
+		function initMap() {
+			var BG = new google.maps.LatLng(32.2358,-110.9326);
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 15,
+				center: BG,
+				disableDefaultUI: true,
+				styles: [
+					{
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#212121"
+							}
+						]
+					},
+					{
+						"elementType": "labels.icon",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"color": "#212121"
+							}
+						]
+					},
+					{
+						"featureType": "administrative",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.country",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#9e9e9e"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.land_parcel",
+						"elementType": "labels",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#bdbdbd"
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"featureType": "poi.business",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#181818"
+							}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+							"color": "#616161"
+						}
+						]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+							{
+								"color": "#1b1b1b"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "geometry.fill",
+						"stylers": [
+							{
+								"color": "#2c2c2c"
+							}
+						]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#8a8a8a"
+							}
+						]
+					},
+					{
+						"featureType": "road.arterial",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#373737"
+							}
+						]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#3c3c3c"
+							}
+						]
+					},
+					{
+						"featureType": "road.highway.controlled_access",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#4e4e4e"
+							}
+						]
+					},
+					{
+						"featureType": "road.local",
+						"elementType": "labels",
+						"stylers": [
+							{
+								"visibility": "off"
+							}
+						]
+					},
+					{
+						"featureType": "road.local",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#616161"
+							}
+						]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#757575"
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+							{
+								"color": "#000000"
+							}
+						]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+							{
+								"color": "#3d3d3d"
+							}
+						]
+					}
+				]
+			});
+			const marker = new google.maps.Marker({
+				position: BG,
+				map: map,
+				title: "Bellas Gelato 2648 E. Speedway",
+			});
+		}
+		window.initMap = initMap;
+	</script>
+</head>
+<body>
+	<header class="sticky">
+		<img src="pics/bellas logo.png" height=100px alt="Bella's Logo" style="margin-bottom:-20px;">
+		<div>
+			<h1>Bella's Gelato Shoppe</h1>
+			<div style="margin:10px;">
+				<a href="index.html">Home</a>
+				<a href="menu.html">Menu</a>
+				<a href="bella.html">Bella and Friends</a>
+				<a href="foodtruck.html">Food Truck</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+		</div>
+	</header>
+	<main class="contact">
+		<div class="contact-block top">
+			
+		</div>
+		<div class="undertop">
+			<h4>Get in touch with us</h4>
+		</div>
+		<div class="contact-block left">
+			<div id="map">
+			</div>
+			<script async
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKgqqzYtXftqFfT_g4XereEWnhYg8Dup8&callback=initMap">
+			</script>
+		</div>
+		<div class="contact-block ctr">
+			<h4 style="font-size:30px">Meet us</h4>
+			<p>CALL US at (520) 954-2843<br>EMAIL US at elizabeth@bellasgelato.com<br>VISIT US at 2648 E. Speedway, Tucson AZ, 85716</p>
+		</div>
+		<div class="contact-block right">
+			<h4 style="font-size:30px">Contact us</h4>
+			<form form action="contact.php" method="post" enctype="multipart/form-data" name="contactform">
+				<label for="name">Hello, my name is</label>
+				<input type="text" id="name" name="name" placeholder="your name" required>
+				<label for="email">and my email address is</label>
+				<input type="email" id="email" name="email" placeholder="your email" required>
+				<label for="message">and I would like to ask about</label>
+				<input type="text" id="message" name="message" placeholder="your question" required><br>
+				<input type="submit" id="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+</body>
+</html>

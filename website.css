@@ -1,0 +1,285 @@
+@font-face {
+	font-family: luloclean;
+	src: url(fonts/LuloClean.ttf)
+}
+@font-face {
+	font-family: opensans;
+	src: url(fonts/OpenSans-Bold.ttf)
+}
+@font-face {
+	font-family: avenir;
+	src: url(fonts/AvenirLight.ttf)
+}
+body {
+	margin: 0;
+	margin-top: 198px;
+	overflow-y: hidden;
+	background-color: #ffffff;
+}
+a {
+	color: black;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin: 10px;
+	padding: 5px;
+	background-color: #ffffffff;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: avenir;
+}
+a:hover {
+	color: white;
+	background-color: #605e5eff;
+}
+h1 {
+	margin: 10px;
+	margin-bottom: 0;
+}
+h2 {
+	background-color: #ffffff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 30px;
+	color: #A0A09F;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	display: inline-flex;
+	z-index: 2;
+}
+h3 {
+	width: 700px;
+	max-width: 90vw;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin: auto;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	color: #605E5E;
+}
+h4 {
+	margin: auto;
+	font-family: 'LuloClean';
+	color: white;
+}
+main {
+	overflow-x: hidden;
+	perspective: 2px;
+	z-index: -1;
+	top: 0;
+}
+header {
+	padding: 10px;
+	background: #9950cc;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	font-family: avenir;
+	z-index: 2;
+	height: 20vh;
+}
+hr {
+	border: 1px solid white;
+	z-index: 1;
+	margin-top: 55px;
+	margin-bottom: -25px;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 0;
+}
+input {
+	font-size: 20px;
+	font-family: avenir;
+	width: auto;
+	background-color: #0000D0;
+	border: 0;
+	padding: 0;
+	color: black;
+}
+input:-internal-autofill-selected {
+	background-color: #0000D0;
+}
+form {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.parent {
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 50vh;
+}
+.child {
+	position: absolute;
+	right: -9999px;
+	left: -9999px;
+	margin: auto;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100vw;
+	height: 100%;
+}
+.scrollless {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-y: scroll;
+	display: grid;
+}
+.scrollless::-webkit-scrollbar {
+	display: none;
+}
+.banner {
+	position: relative;
+	height: 50vh;
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+.textbox-top {
+	border-radius: 30px 0px 0px 0px;
+	background-color: #ffffffd0;
+	font-family: luloclean;
+	font-size: 40px;
+	color: #605e5e;
+	width: 638px;
+	height: 119px;
+	text-align: center;
+}
+.textbox-bottom {
+	border-radius: 0px 0px 30px 0px;
+	background-color: #605e5ed0;
+	width: 638px;
+	height: 68px;
+	margin-top: 0px;
+}
+.textbox-span {
+	background-color: #ffffffd0;
+	font-family: luloclean;
+	font-size: 40px;
+	color: #605e5e;
+	width: 100vw;
+	height: 65px;
+	text-align: center;
+}
+.text {
+	font-weight: bold;
+	text-align: center;
+	line-height: 20px;
+	font-family: opensans;
+	font-size: 15px;
+	color: #ffffff;
+	padding-top: 10px;
+}
+.parallax::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: translateZ(-1px) scale(1.5);
+	background-size: 100%;
+	z-index: -1;
+}
+.bg1 {
+	background-image: url('pics/bellas sunset background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: 500vh;
+}
+.split {
+	width: 50%;
+	float: left;
+}
+.bellapics {
+	width: 50vh;
+	min-width: 60vw;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+.dogpics {
+	display: grid;
+	width: 86vw;
+	margin: auto;
+	margin-top: 50px;
+	gap: 2vw;
+	justify-content: space-evenly;
+	grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+.dogpic {
+	display: inline-grid;
+	border: 0.5vw;
+	background-color: rgba(200, 70, 70, 60);
+	border-style: solid;
+	border-color: rgba(200, 70, 70, 60);
+	height: 19vw;
+	overflow-x: hidden;
+	justify-content: center;
+}
+.contact {
+	display: grid;
+	grid-template: 30vh 50vh / calc(100%/3) calc(100%/3) ;
+	background-image: url('pics/brick.jpg')
+}
+.contact-block {
+	display: inline-grid;
+	text-align: center;
+	font-size: 20px;
+	font-family: avenir;
+}
+.top {
+	grid-column: 1 / span 3;
+	grid-row: 1;
+	z-index: 2;
+}
+.undertop {
+	grid-column: 1 / span 3;
+	grid-row: 1;
+	z-index: 1;
+	text-align: center;
+	line-height: 30vh;
+	font-size: 40px;
+}
+.left {
+	background-color: #A0A0E0;
+}
+.ctr {
+	background-color: #A0A0E0;
+	line-height: 5vh;
+}
+.right {
+	background-color: #0000D0;
+}
+#name {
+	width: 120px;
+}
+#email {
+	width: 250px;
+}
+#message {
+	width: 100%;
+}
+#submit {
+	margin: 10px;
+	padding: 2px;
+	border: 3px solid black;
+}
+.hidden {
+	height: 0;
+	width: 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
